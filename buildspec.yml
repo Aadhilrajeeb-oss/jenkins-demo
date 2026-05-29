@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+
+  pre_build:
+    commands:
+      - echo "Pre-build phase"
+
+  build:
+    commands:
+      - echo "Build started"
+      - python3 --version
+      - echo "Application build successful"
+
+artifacts:
+  files:
+    - '**/*'
